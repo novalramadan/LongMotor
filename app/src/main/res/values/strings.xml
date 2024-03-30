@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">longMotor</string>
+    <string name="app_name">Jasa Cuci Motor</string>
+    <string name="intro_long">Jasa cuci motor adalah Aplikasi yang membantu menghitung estinasi pembayaran di dalam jasa pencucian motor</string>
+    <string name="nomor_plat">Nomor Plat</string>
+    <string name="cc_motor_down">Down 150cc</string>
+    <string name="cc_motor_up">Up 150cc</string>
+    <string name="hitung">Hitung</string>
+    <string name="input_valid">Tidak boleh kosong</string>
+    <string name="copyringht">Jasa cuci motor merupakan sebuah aplikasi Android untuk menghitung estinasi pembayaran di dalam jasa pencucian motor. \n\nAplikasi ini
+        dibuat untuk asesmant kelas Mobpro 1. \n\nCopyright © 2021 Noval Abdurramadan.\nAll rights reserved</string>
+    <string name="kembali">Kembali</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="bagikan_template">Nomor Plat: %1$s\nCC kendaraan :%2$s \nHarga Cucian: %3$s \n</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
 </resources>

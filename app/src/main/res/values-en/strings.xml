@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Motorcycle Washing Services</string>
+    <string name="intro_long">Motorcycle washing services is an application that helps calculate payment estimates for motorbike washing services</string>
+    <string name="nomor_plat">Plat number</string>
+    <string name="cc_motor_down">Down 150cc</string>
+    <string name="cc_motor_up">Up 150cc</string>
+    <string name="hitung">Sum</string>
+    <string name="input_valid">Can not be empty</string>
+    <string name="tentang_aplikasi">About the application</string>
+    <string name="bagikan">Share</string>
+    <string name="copyringht">Motorcycle washing service is an Android application for calculating payment destinations for motorbike washing services. \n \n this application:\n made for Mobpro 1 class assessants. \n\nCopyright © 2021 Noval Abdurramadan. \nAll rights reserved</string>
+    <string name="kembali">Back</string>
+    <string name="bagikan_template">"Nomor Plat: %1$s CC kendaraan :%2$s  Harga Cucian: %3$s  "</string>
+</resources>
