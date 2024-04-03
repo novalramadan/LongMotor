@@ -90,6 +90,9 @@ fun MainScreen(navController: NavHostController) {
 
 fun ScreenContent(modifier: Modifier) {
     var nomor by rememberSaveable { mutableStateOf("") }
+    var nomorError by rememberSaveable {
+        mutableStateOf(false)
+    }
 
 
     val radioOptions = listOf(
@@ -103,6 +106,7 @@ fun ScreenContent(modifier: Modifier) {
     var hargaCucian by rememberSaveable { mutableStateOf(0) }
 
     val context = LocalContext.current
+
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -128,6 +132,12 @@ fun ScreenContent(modifier: Modifier) {
         var nomorError by rememberSaveable { mutableStateOf(false) }
         OutlinedTextField(
             value = nomor,
+            trailingIcon = {
+                IconPicker(isError = nomorError, unit ="" )
+            },
+            supportingText = {
+                             ErrorHint(isError =nomorError )
+            },
             onValueChange = {
                 nomor = it
                 nomorError = it.isBlank() // Set error if input is empty
@@ -166,6 +176,9 @@ fun ScreenContent(modifier: Modifier) {
 
         Button(
             onClick = {
+                nomorError = (nomor == "" || nomor == "0")
+                if (nomorError)return@Button
+
 
                 if (nomor.isNotBlank()) {
                     hargaCucian = if (cc == "Down 150cc") {
